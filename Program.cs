@@ -20,6 +20,7 @@ void Print_array()
 }
 
 //Create_array();
+
 Print_array();
 
 
