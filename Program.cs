@@ -3,15 +3,15 @@
 // Первоначальный массив можно ввести с клавиатуры,либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-string[] str = { "ruw", "oeru", "qo", "rur4o", "2", "tu", "t", "ry", "386g", "etyerye", "57", "dh", "g", "h", "re", "24", "7f", "785", "6cvb", "ete", "sge", "r", "ed", "w" };
+
 // Создание массива
-// void Create_array()
-// {
-//     string[] str = { "ruw", "oeru", "qo", "rur4o", "2", "tu", "t", "ry", "386g", "etyerye", "57", "dh", "g", "h", "re", "24", "7f", "785", "6cvb", "ete", "sge", "r", "ed", "w" };
-// }
+string[] enter_str = { "ruw", "oeru", "qo", "rur4o", "2", "tu", "t", "ry", "386g", "etyerye", "57", "dh", "g", "h", "re", "24", "7f", "785", "6cvb", "ete", "sge", "r", "ed", "w" };
+
+// Создание массива из искомых символов
+string[] new_str = new string[enter_str.Length];
 
 // Вывод массива
-void Print_array()
+void Print_array(string[] str)
 {
     for (int i = 0; i < str.Length; i++)
     {
@@ -19,9 +19,34 @@ void Print_array()
     }
 }
 
+// Выбор искомых элементов массива и формирование нового массива
+string[] Find_simbol(string[] str)
+{
+    int j = 0;
+    for (int i = 0; i < str.Length; i++)
+    {
+        string temp_str = str[i];
+        if (temp_str.Length <= 3)
+        {
+            new_str[j] = str[i];
+            j++;
+        }
+    }
+    return new_str;
+}
+
+
+
+
 //Create_array();
 
-Print_array();
+Print_array(enter_str);
+Console.WriteLine();
+
+Print_array(Find_simbol(enter_str));
+
+
+
 
 
 
