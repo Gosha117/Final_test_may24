@@ -22,6 +22,7 @@ void Print_array(string[] array)
 // Выбор искомых элементов массива и формирование нового массива
 string[] Find_simbol(string[] array)
 {
+    string[] new
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
