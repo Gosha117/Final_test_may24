@@ -29,13 +29,13 @@ string[] Find_simbol(string[] array, int n_simbol)
     for (int i = 0; i < array.Length; i++)
     {
         string temp_str = array[i];
-        if (temp_str.Length) <= n_simbol)
+        if (temp_str.Length <= n_simbol)
         {
-        new_str[j] = array[i];
-        j++;
+            new_str[j] = array[i];
+            j++;
+        }
     }
-}
-return new_str;
+    return new_str;
 }
 
 
@@ -46,7 +46,7 @@ return new_str;
 Print_array(enter_str);
 Console.WriteLine();
 
-Print_array(Find_simbol(enter_str));
+Print_array(Find_simbol(enter_str, num_sim));
 
 
 
