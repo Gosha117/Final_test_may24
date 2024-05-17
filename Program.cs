@@ -11,22 +11,22 @@ string[] enter_str = { "ruw", "oeru", "qo", "rur4o", "2", "tu", "t", "ry", "386g
 string[] new_str = new string[enter_str.Length];
 
 // Вывод массива
-void Print_array(string[] str)
+void Print_array(string[] array)
 {
-    for (int i = 0; i < str.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(str[i] + " ");
+        Console.Write(array[i] + " ");
     }
 }
 
 // Выбор искомых элементов массива и формирование нового массива
-string[] Find_simbol(string[] str)
+string[] Find_simbol(string[] array)
 {
     int j = 0;
-    for (int i = 0; i < str.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        string temp_str = str[i];
-        if (temp_str.Length <= 3)
+        // string temp_str = str[i];
+        if (array[array.Length] <= 3)
         {
             new_str[j] = str[i];
             j++;
