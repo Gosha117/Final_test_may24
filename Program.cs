@@ -7,7 +7,10 @@
 // Создание массива
 string[] enter_str = { "ruw", "oeru", "qo", "rur4o", "2", "tu", "t", "ry", "386g", "etyerye", "57", "dh", "g", "h", "re", "24", "7f", "785", "6cvb", "ete", "sge", "r", "ed", "w" };
 
-// Создание массива из искомых символов
+// введение максимального количества символов для возвращаемого элемента массива 
+int num_sim = 3;
+
+// Создание возвращаемого массива
 string[] new_str = new string[enter_str.Length];
 
 // Вывод массива
@@ -20,14 +23,13 @@ void Print_array(string[] array)
 }
 
 // Выбор искомых элементов массива и формирование нового массива
-string[] Find_simbol(string[] array)
+string[] Find_simbol(string[] array, int n_simbol)
 {
-    string[] new
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
         // string temp_str = str[i];
-        if (array[array.Length] <= 3)
+        if (array[array.Length] <= n_simbol)
         {
             new_str[j] = str[i];
             j++;
@@ -39,7 +41,7 @@ string[] Find_simbol(string[] array)
 
 
 
-//Create_array();
+
 
 Print_array(enter_str);
 Console.WriteLine();
