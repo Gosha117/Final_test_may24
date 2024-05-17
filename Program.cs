@@ -37,8 +37,7 @@ string[] Find_simbol(string[] array, int n_simbol)
     }
     return new_str;
 }
-// Console.WriteLine(num1+ "text"+ num2);
-// Console.WriteLine($"{num1} text {num2}");
+
 
 Console.Write("Исходный массив: ");
 Print_array(enter_str);
