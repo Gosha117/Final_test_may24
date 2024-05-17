@@ -39,20 +39,12 @@ string[] Find_simbol(string[] array, int n_simbol)
 }
 
 
-
-
-
-
 Print_array(enter_str);
+
 Console.WriteLine();
 
 Print_array(Find_simbol(enter_str, num_sim));
 
 
-
-
-
-
-// Console.WriteLine("Hello, World!");
 
 
