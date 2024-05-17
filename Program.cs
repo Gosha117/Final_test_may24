@@ -13,7 +13,7 @@ int num_sim = 3;
 // Создание возвращаемого массива
 string[] new_str = new string[enter_str.Length];
 
-// Вывод массива
+// Вывод массива строк
 void Print_array(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -28,14 +28,14 @@ string[] Find_simbol(string[] array, int n_simbol)
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        // string temp_str = str[i];
-        if (array[array.Length] <= n_simbol)
+        string temp_str = array[i];
+        if (temp_str.Length) <= n_simbol)
         {
-            new_str[j] = str[i];
-            j++;
-        }
+        new_str[j] = array[i];
+        j++;
     }
-    return new_str;
+}
+return new_str;
 }
 
 
